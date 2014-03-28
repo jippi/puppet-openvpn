@@ -173,6 +173,7 @@ define openvpn::server(
   $proto = 'tcp',
   $status_log = "${name}/openvpn-status.log",
   $server = '',
+  $server_bridge = '',
   $push = [],
   $route = [],
   $keepalive = '',
