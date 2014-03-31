@@ -63,10 +63,3 @@ plugin /usr/lib/openvpn/openvpn-auth-pam.so login
 <% if scope.lookupvar('management') -%>
 management <%= scope.lookupvar('management_ip') %> <%= scope.lookupvar('management_port') %>
 <% end -%>
-
-# Hardcoded stuff
-mssfix 1
-fragment 0
-cipher aes-256-cbc
-tun-mtu 60000
-engine aesni
